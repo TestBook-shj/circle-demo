@@ -31,7 +31,7 @@ then
   # 删除掉旧的文件
   git rm -rf
 else
-  git chechout --orphan gh-pages
+  git checkout --orphan gh-pages
 fi
 
 # 把构建好的文件目录拷贝进来
