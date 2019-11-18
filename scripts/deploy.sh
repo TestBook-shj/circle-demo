@@ -24,8 +24,7 @@ echo 'sitesource is: '$siteSource
 
 # 切换gh-pages分支
 if
-  git rev-parse --verify origin/gh-pages 2/ >/dev/null &
-  1
+  git rev-parse --verify origin/gh-pages >/dev/null 2>&1
 then
   git chechout gh-pages
   # 删除掉旧的文件
